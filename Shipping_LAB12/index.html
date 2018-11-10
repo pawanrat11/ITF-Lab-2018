@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>TheBearShip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+</head>
+<body>
+  <form method="POST" action="cal.php">
+  <br><br><br><br><br><br><br><br>
+  <div class="center-box mg-t">
+    <table align="center">
+      <caption><h1>อัตราค่าบริการ</h1></caption>
+        <tr>
+          <td><h2>พิกัดน้ำหนัก</h2></td>
+          <td><h2>แบบ Normal</h2></td>
+          <td><h2>แบบ Fast</h2></td>
+        </tr>
+        <tr>
+          <td>ไม่เกิน 0.25 kg</td>
+          <td>25.-</td>
+          <td>38.-</td>
+        </tr>
+        <tr>
+          <td>เกิน 0.25 kg แต่ไม่เกิน 0.5 kg</td>
+          <td>30.-</td>
+          <td>45.-</td>
+        </tr>
+        <tr>
+          <td>เกิน 0.5 kg แต่ไม่เกิน 1 kg</td>
+          <td>50.-</td>
+          <td>65.-</td>
+        </tr>
+        <tr>
+            <td>เกิน 1 kg แต่ไม่เกิน 2 kg</td>
+            <td>64.-</td>
+            <td>80.-</td>
+        </tr>
+        <tr>
+          <td>เกิน 2 kg แต่ไม่เกิน 5 kg</td>
+          <td>100.-</td>
+          <td>135.-</td>
+        </tr>
+        <tr>
+          <td>เกิน 5 kg แต่ไม่เกิน 10 kg</td>
+          <td>160.-</td>
+          <td>190.-</td>
+        </tr>
+    </table>
+    <p>*ทาง TheBearShip ไม่สามารถจัดส่งพัสดุที่เกิน 10 kg</p>
+    <div class="center-box mg-t">
+    <h1>จัดส่งภายในประเทศ</h1>
+    <p>หากจัดส่งพัสดุภายในประเทศจะส่งผ่านรถ และมอเตอร์ไซต์ของ TheBearShip</p><br><br>
+    <img src="image/scooter.png">
+    <img src="image/truck.png">
+    <h1>จัดส่งภายนอกประเทศ</h1>
+    <p>หากจัดส่งพัสดุไปยังภายนอกประเทศจะส่งผ่านเรือ และเครื่องบิน</p><br><br>
+    <img src="image/cruise.png">
+    <img src="image/airplane.png">
+    </div>
+  </div>
+
+  <div class="center-box mg-t" color="ffffff">
+    <h1>คำนวณค่าจัดส่ง</h1>
+    <label for="weight"><font size="5">น้ำหนัก (kg) : </font></label>
+    <input type="text" name="weight" size="20" required/><br><br>
+    <label for="weight" size="20"><font size="5">จำนวนพัสดุ : </font></label>
+    <input type="text" name="amount" required />
+    <br>
+    <input type="radio" name="where" value="0" required><font size="5">  ภายในประเทศ</font>
+    <input type="radio" name="where" value="259" required><font size="5">  ภายนอกประเทศ</font><br><br>
+    <button class="btn" value="calculate" type="submit">คำนวณ</button><br><br>
+  </div>
+</form>
+</body>
+</html>

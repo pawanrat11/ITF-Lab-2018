@@ -1,0 +1,64 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-image: url(image/B2.png);
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+}
+.row {
+
+    margin-right: 10000px;
+    margin-left: 700px;
+
+}
+
+.center-box {
+    text-align: center;
+}
+
+.mg-t {
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+}
+
+img {
+    width: 150px;
+    height: 150px;
+  }
+
+.btn {
+    border-radius: 200px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+table {
+    border-radius: 8px;
+    border-collapse: collapse;
+    width: 50vw;
+    background-color: rgb(255, 255, 255);
+}
+tr{
+    background-color: rgb(255, 255, 255);
+}
+td,th{
+    border: 0.5px solid rgb(16, 49, 65);
+    padding: 12px;
+}
+
+  .price {
+    text-align: right;
+  }
+
+input {
+    padding: 20px;
+    font-size: 20px;
+  }
+h1{
+    font-size: 50px;
+}
+
+p{
+    font-size: 25px;
+}
