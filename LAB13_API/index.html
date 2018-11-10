@@ -1,0 +1,40 @@
+<html>
+
+<head>
+
+	<title>Welcome to JSON</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">  
+</head>
+
+<body> 
+	<!-- ดึง API-->
+	<script type="text/javascript">
+
+        	$.getJSON('https://got-quotes.herokuapp.com/quotes', function(response) {
+
+			document.getElementById("quote").innerHTML = response.quote
+			document.getElementById("char").innerHTML = response.character
+			
+		});
+    
+	</script>
+<!-- แสดงผล-->
+<br><br><br><br><br><br>
+<div id="quote"></div>
+<div id="char"></div><br><br>
+<div class="text">
+	<h2>Where is quote from?</h2>
+	<p>ได้ทำการดึง Quote และชื่อตัวละครในหนังเรื่อง Game-of-thrones มาแสดงผลแบบ Random โดยดึงข้อมูลมาจาก <a href="https://got-quotes.herokuapp.com/quotes" color="ffffff">ที่นี่</a><br><br>
+		<img src="image/api.png" width="800" height="80"><br><br>แหล่งที่มาของ API <a href="https://github.com/wsizoo/game-of-thrones-quotes" color="ffffff">github ของ wsizoo</a>	</p>
+
+	<h2> API คืออะไร ? </h2>
+	<p>API (Application Programming Interface) เป็นช่องทางที่เปิดให้โปรแกรมสามารถสื่อสารระหว่างโปรแกรมอื่น ๆ <br> ช่วยให้เข้าถึงข้อมูลต่าง ๆ หรือนำข้อมูลต่าง ๆ ออกจากเว็บไซต์ได้
+		ผู้ที่เขียน API มีหน้าที่เขียน API เพื่อให้คนอื่นเรียกใช้งาน <br> ส่วนคนที่เรียกขอ API ก็ทำหน้าที่แค่ส่งค่า และรับค่าไปแสดงผลบนหน้าเว็บของตัวเอง 
+	</p>
+</div>
+</body>
+
+</html>

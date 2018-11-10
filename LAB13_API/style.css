@@ -1,0 +1,30 @@
+body {
+    background-image: url(image/black_paper.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#quote{
+    text-align: center;
+    padding: 100px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    color: black;
+    background-color: whitesmoke;
+    
+}
+#char{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+    color: black;
+    background-color: aliceblue;
+    
+}
+.text{
+    text-align: center;
+    padding: 70px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color: aliceblue;  
+}
